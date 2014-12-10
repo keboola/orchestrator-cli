@@ -37,4 +37,14 @@ orchestrator
 ```
 
 
+## Build
+Tool is distributed as PHAR package, follow these steps to create package of current version:
+
+```bash
+curl -LSs https://box-project.github.io/box2/installer.php | php
+./box.phar build -v
+```
+
+`orcestrator-client.phar` archive will be created, you can execute it `./orchestrator-client.phar`
+
 
