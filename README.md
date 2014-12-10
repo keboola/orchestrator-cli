@@ -2,18 +2,19 @@
 
 Simple command line wrapper for [Keboola Orchestrator PHP Client](https://github.com/keboola/orchestrator-php-client)
 
-## Development
+## Installation
 
-```bash
-[ondra@kbc-devel-02 ~]$ git clone https://github.com/keboola/orchestrator-php-client.git
-[ondra@kbc-devel-02 ~]$ cd orchestrator-php-client
-[ondra@kbc-devel-02 orchestrator-php-client]$ composer install
-```
+Download the latest version from https://s3.amazonaws.com/keboola-orchestrator-cli/builds/orchestrator-client.phar .
+
+From there, you may place it anywhere that will make it easier for you to access (such as /usr/local/bin) and chmod it to 755.
+You can even rename it to just orchestrator-client to avoid having to type the .phar extension every time.
+
+Orchestrator CLI requires PHP 5.4 or newer.
 
 ## Usage
 
 ```bash
-[ondra@kbc-devel-02 orchestrator-php-client]$ php bin/application.php
+php orchestrator-client.phar
 Console Tool
 
 Usage:
@@ -34,6 +35,14 @@ Available commands:
 orchestrator
  orchestrator:run-sync   Create an orchestrator job and wait until it's done.
 
+```
+
+## Development
+
+```bash
+git clone https://github.com/keboola/orchestrator-cli.git
+$ cd orchestrator-cliclient
+composer install
 ```
 
 
