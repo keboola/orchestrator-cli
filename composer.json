@@ -13,5 +13,6 @@
 	"require": {
         "keboola/orchestrator-php-client": "~1.1.1",
         "symfony/console": "~2.6.0"
-	}
+	},
+	"bin": ["bin/application"]
 }
