@@ -1,0 +1,24 @@
+language: php
+php:
+- 5.4
+before_script:
+- " curl -LSs https://box-project.github.io/box2/installer.php | php"
+- gem install travis-artifacts
+- composer install --prefer-source --dev --no-interaction
+script:
+- php ./box.phar build
+- php ./orchestrator-client.phar
+after_success:
+- CURRENT_TAG=`git describe --tags HEAD`
+- echo $CURRENT_TAG
+- cp ./orchestrator-client.phar ./orchestrator-client.$CURRENT_TAG.phar
+- test ${TRAVIS_BRANCH} = master && travis-artifacts upload --path orchestrator-client.phar
+  --target-path='builds'
+- test ${TRAVIS_BRANCH} = master && travis-artifacts upload --path orchestrator-client.$CURRENT_TAG.phar
+  --target-path='builds'
+env:
+  global:
+  - ARTIFACTS_AWS_REGION=eu-west-1
+  - ARTIFACTS_S3_BUCKET=keboola-orchestrator-cli
+  - secure: EE9mFvtwsipigkQLD+M6GIHDDCsN/ZJSO72tmw4/fgEfXmmkhYFqJ8gMeWbblZgFvtcG9uDpf590RlIfkkyWdF3yyDxJXFvKHSMANOldlybSgAov6dMGTBin/J4XKHONecDLlrVsh+rMBOa0T+u6XnRDCPADlyoeerVTquWLmyM=
+  - secure: ODOEc8Q3ipbspo3MvcBGaGnqTltfMGdoCdboE3AQDxPquk78Nk/7Vz2429CyL2IIN4MskQc7i7nGDw21NE/Wsl0xfXRxRPK/vSpWxcEwDHK+graHi6ZKBze2k5xgHTpmxdZUr8Jz6Z8tzSkwWphIsEJF9kqXtcbFQm/PoBW44JI=
