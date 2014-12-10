@@ -7,7 +7,8 @@ Simple command line wrapper for [Keboola Orchestrator PHP Client](https://github
 ```bash
 [ondra@kbc-devel-02 ~]$ git clone https://github.com/keboola/orchestrator-php-client.git
 [ondra@kbc-devel-02 ~]$ cd orchestrator-php-client
-[ondra@kbc-devel-02 orchestrator-php-client]$ composer install```
+[ondra@kbc-devel-02 orchestrator-php-client]$ composer install
+```
 
 ## Usage
 
