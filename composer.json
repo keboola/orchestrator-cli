@@ -1,0 +1,17 @@
+{
+	"name": "keboola/orchestrator-cli",
+	"description": "Keboola Orchestrator CLI",
+	"autoload": {
+		"psr-0": {
+			"Keboola": "src/"
+		}
+	},
+	"require-dev": {
+		"phpunit/phpunit": "3.7.*"
+
+	},
+	"require": {
+        "keboola/orchestrator-php-client": "~1.1.1",
+        "symfony/console": "~2.6.0"
+	}
+}
