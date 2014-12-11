@@ -20,5 +20,5 @@ env:
   global:
   - ARTIFACTS_AWS_REGION=eu-west-1
   - ARTIFACTS_S3_BUCKET=keboola-orchestrator-cli
-  - secure: EE9mFvtwsipigkQLD+M6GIHDDCsN/ZJSO72tmw4/fgEfXmmkhYFqJ8gMeWbblZgFvtcG9uDpf590RlIfkkyWdF3yyDxJXFvKHSMANOldlybSgAov6dMGTBin/J4XKHONecDLlrVsh+rMBOa0T+u6XnRDCPADlyoeerVTquWLmyM=
-  - secure: ODOEc8Q3ipbspo3MvcBGaGnqTltfMGdoCdboE3AQDxPquk78Nk/7Vz2429CyL2IIN4MskQc7i7nGDw21NE/Wsl0xfXRxRPK/vSpWxcEwDHK+graHi6ZKBze2k5xgHTpmxdZUr8Jz6Z8tzSkwWphIsEJF9kqXtcbFQm/PoBW44JI=
+  - secure: Za6RSz+mTFOdThA3i8TGjiHr3WkbNFc3j9qnjcFYj5qZgheHeHGYXAQwEvkSWRAj3rzuoR1Za5AJBjQlC+EEL9j00hIEfCiRpGkR9x0EjzWh80UCfsVHgW94WkMUYaEEqhqWNpdwzhtRld6VHUWU7Ujek0mDLthO6QKZfSwi060=
+  - secure: HGrnGZRJ1EsqIjTDIeRHowxGUKCUnnJ5wP6kPo5YIFllqsEtd6LcHPFOez5euK44RP0cIQ/ov27fI7iDvEX8oBf88cevL+D54LBjhiYNFxhWFR4FriP4XsbdV8pfK5jEhHdDVhEMpEO5dKDpUSXtW2MXGHCtUWx4+T6wEuq02qI=
