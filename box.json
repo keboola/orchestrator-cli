@@ -1,5 +1,5 @@
 {
-    "alias": "orchestrator-client.phar",
+    "alias": "orchestrator-cli.phar",
     "chmod": "0755",
     "directories": ["src"],
 	"files": [
@@ -16,6 +16,6 @@
     ],
     "git-version": "package_version",
     "main": "bin/application",
-    "output": "orchestrator-client.phar",
+    "output": "orchestrator-cli.phar",
     "stub": true
 }

@@ -7,18 +7,18 @@ before_script:
 - composer install --prefer-source --dev --no-interaction
 script:
 - php ./box.phar build
-- php ./orchestrator-client.phar
+- php ./orchestrator-cli.phar
 after_success:
 - CURRENT_TAG=`git describe --tags HEAD`
 - echo $CURRENT_TAG
-- cp ./orchestrator-client.phar ./orchestrator-client.$CURRENT_TAG.phar
-- test ${TRAVIS_BRANCH} = master && travis-artifacts upload --path orchestrator-client.phar
-  --target-path='builds'
-- test ${TRAVIS_BRANCH} = master && travis-artifacts upload --path orchestrator-client.$CURRENT_TAG.phar
-  --target-path='builds'
+- cp ./orchestrator-cli.phar ./orchestrator-cli.$CURRENT_TAG.phar
+- test ${TRAVIS_BRANCH} = master && travis-artifacts upload --path orchestrator-cli.phar
+  --target-path='orchestrator-cli'
+- test ${TRAVIS_BRANCH} = master && travis-artifacts upload --path orchestrator-cli.$CURRENT_TAG.phar
+  --target-path='orchestrator-cli'
 env:
   global:
-  - ARTIFACTS_AWS_REGION=eu-west-1
+  - ARTIFACTS_AWS_REGION=us-east-1
   - ARTIFACTS_S3_BUCKET=keboola-orchestrator-cli
   - secure: Za6RSz+mTFOdThA3i8TGjiHr3WkbNFc3j9qnjcFYj5qZgheHeHGYXAQwEvkSWRAj3rzuoR1Za5AJBjQlC+EEL9j00hIEfCiRpGkR9x0EjzWh80UCfsVHgW94WkMUYaEEqhqWNpdwzhtRld6VHUWU7Ujek0mDLthO6QKZfSwi060=
   - secure: HGrnGZRJ1EsqIjTDIeRHowxGUKCUnnJ5wP6kPo5YIFllqsEtd6LcHPFOez5euK44RP0cIQ/ov27fI7iDvEX8oBf88cevL+D54LBjhiYNFxhWFR4FriP4XsbdV8pfK5jEhHdDVhEMpEO5dKDpUSXtW2MXGHCtUWx4+T6wEuq02qI=
