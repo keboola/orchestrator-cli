@@ -3,7 +3,9 @@
     "chmod": "0755",
     "directories": ["src"],
 	"files": [
-		"vendor/guzzle/guzzle/src/Guzzle/Http/Resources/cacert.pem"
+		"vendor/guzzle/guzzle/src/Guzzle/Http/Resources/cacert.pem",
+		"vendor/guzzle/guzzle/src/Guzzle/Http/Resources/cacert.pem.md5",
+		"vendor/keboola/orchestrator-php-client/src/Keboola/Orchestrator/service.json"
 	],
     "finder": [
         {
