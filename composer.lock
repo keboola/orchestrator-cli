@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "96686756a77bb158ad8dd93b35a5d747",
+    "hash": "66803c2621e7f621c440ef7b4fc58f35",
     "packages": [
         {
             "name": "guzzle/guzzle",
@@ -100,16 +100,16 @@
         },
         {
             "name": "keboola/orchestrator-php-client",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/keboola/orchestrator-php-client.git",
-                "reference": "6f1e814a2a43b9a1c1f217007b7e06adc9441b5b"
+                "reference": "08759aed7b09a7e82c6d564bd762b136c48ba85b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/keboola/orchestrator-php-client/zipball/6f1e814a2a43b9a1c1f217007b7e06adc9441b5b",
-                "reference": "6f1e814a2a43b9a1c1f217007b7e06adc9441b5b",
+                "url": "https://api.github.com/repos/keboola/orchestrator-php-client/zipball/08759aed7b09a7e82c6d564bd762b136c48ba85b",
+                "reference": "08759aed7b09a7e82c6d564bd762b136c48ba85b",
                 "shasum": ""
             },
             "require": {
@@ -128,7 +128,7 @@
             "notification-url": "https://packagist.org/downloads/",
             "description": "PHP Client for KBC Orchestrator",
             "homepage": "https://connection.keboola.com",
-            "time": "2014-11-06 13:03:06"
+            "time": "2014-12-09 11:33:17"
         },
         {
             "name": "symfony/console",
