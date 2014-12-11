@@ -19,6 +19,6 @@ after_success:
 env:
   global:
   - ARTIFACTS_AWS_REGION=us-east-1
-  - ARTIFACTS_S3_BUCKET=keboola-orchestrator-cli
+  - ARTIFACTS_S3_BUCKET=keboola-builds
   - secure: Za6RSz+mTFOdThA3i8TGjiHr3WkbNFc3j9qnjcFYj5qZgheHeHGYXAQwEvkSWRAj3rzuoR1Za5AJBjQlC+EEL9j00hIEfCiRpGkR9x0EjzWh80UCfsVHgW94WkMUYaEEqhqWNpdwzhtRld6VHUWU7Ujek0mDLthO6QKZfSwi060=
   - secure: HGrnGZRJ1EsqIjTDIeRHowxGUKCUnnJ5wP6kPo5YIFllqsEtd6LcHPFOez5euK44RP0cIQ/ov27fI7iDvEX8oBf88cevL+D54LBjhiYNFxhWFR4FriP4XsbdV8pfK5jEhHdDVhEMpEO5dKDpUSXtW2MXGHCtUWx4+T6wEuq02qI=
