@@ -4,7 +4,7 @@ Simple command line wrapper for [Keboola Orchestrator PHP Client](https://github
 
 ## Installation
 
-Download the latest version from https://s3.amazonaws.com/keboola-build/orchestrator-cli/orchestrator-cli.phar.
+Download the latest version from https://s3.amazonaws.com/keboola-builds/orchestrator-cli/orchestrator-cli.phar.
 
 From there, you may place it anywhere that will make it easier for you to access (such as /usr/local/bin) and chmod it to 755.
 You can even rename it to just orchestrator-client to avoid having to type the .phar extension every time.

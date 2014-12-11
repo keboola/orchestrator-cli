@@ -55,7 +55,11 @@ class RunSync extends Command
         $id = (int) $input->getArgument("id");
         $client = Client::factory(array("token" => $token));
 
+        $output->writeln("Creating job for orchestrator {$id}...");
+
         $job = $client->createJob($id);
+
+        $output->writeln("Job {$job["id"]} created, waiting for result...");
 
         // polling
         $finished = false;
@@ -80,7 +84,7 @@ class RunSync extends Command
             sleep($input->getArgument("interval"));
         }
 
-        $output->writeln("Job {$job["id"]} created and finished: {$status}.");
+        $output->writeln("Job {$job["id"]} finished: {$status}.");
         if ($status == 'success') {
             return 0;
         } else {
