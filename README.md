@@ -1,4 +1,4 @@
-# Keboola Orchestrator Command Line Interface
+# Keboola Orchestrator CLI
 
 Simple command line wrapper for [Keboola Orchestrator PHP Client](https://github.com/keboola/orchestrator-php-client)
 
