@@ -3,7 +3,7 @@ language: bash
 services:
   - docker
 script:
-  - docker build -t keboola/orchestrator-cli
+  - docker build -t keboola/orchestrator-cli .
   - docker run --rm keboola/orchestrator-cli
 deploy:
   provider: script
