@@ -4,17 +4,14 @@ Simple command line wrapper for [Keboola Orchestrator PHP Client](https://github
 
 ## Installation
 
-Download the latest version from https://s3.amazonaws.com/keboola-builds/orchestrator-cli/orchestrator-cli.phar.
-
-From there, you may place it anywhere that will make it easier for you to access (such as /usr/local/bin) and chmod it to 755.
-You can even rename it to just orchestrator-client to avoid having to type the .phar extension every time.
-
-Orchestrator CLI requires PHP 5.4 or newer.
+- clone the repo
+- `docker-compose build`
+- `docker run keboola/orchestrator-cli`
 
 ## Usage
 
 ```bash
-php orchestrator-cli.phar
+docker run keboola/orchestrator-cli
 Console Tool
 
 Usage:
@@ -40,20 +37,9 @@ orchestrator
 ## Development
 
 ```bash
-git clone https://github.com/keboola/orchestrator-cli.git
-$ cd orchestrator-cli
-composer install
+- git clone https://github.com/keboola/orchestrator-cli.git
+- $ cd orchestrator-cli
+- docker-compose build
+- docker-compose run --rm dev composer install
+- docker-compose run --rm dev
 ```
-
-
-## Build
-Tool is distributed as PHAR package, follow these steps to create package of current version:
-
-```bash
-curl -LSs https://box-project.github.io/box2/installer.php | php
-./box.phar build -v
-```
-
-`orcestrator-cli.phar` archive will be created, you can execute it `./orchestrator-cli.phar`
-
-
