@@ -43,3 +43,7 @@ orchestrator
 - docker-compose run --rm dev composer install
 - docker-compose run --rm dev
 ```
+
+## Integration
+Tagged version is pushed to Keboola DEV AWS ECR `061240556736.dkr.ecr.us-east-1.amazonaws.com/keboola/orchestrator-cli`.
+`orchestrator-cli-pull` IAM grouped allows pull of the image. 
