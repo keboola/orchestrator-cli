@@ -34,4 +34,4 @@ COPY . /code/
 # run normal composer - all deps are cached already
 RUN composer install $COMPOSER_FLAGS
 
-CMD ["/code/bin/application"]
+ENTRYPOINT ["/code/bin/application"]

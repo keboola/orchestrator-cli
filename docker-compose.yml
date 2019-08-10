@@ -3,5 +3,6 @@ services:
   dev:
     build: .
     image: keboola/orchestrator-cli
+    entrypoint: []
     volumes:
       - ./:/code
